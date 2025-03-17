@@ -19,6 +19,9 @@ certifi==2025.1.31
     # via
     #   httpcore
     #   httpx
+    #   requests
+charset-normalizer==3.4.1
+    # via requests
 click==8.1.8
     # via
     #   black
@@ -51,6 +54,7 @@ idna==3.10
     #   anyio
     #   email-validator
     #   httpx
+    #   requests
 iniconfig==2.0.0
     # via pytest
 isort==6.0.1
@@ -102,6 +106,8 @@ python-multipart==0.0.20
     # via fastapi
 pyyaml==6.0.2
     # via uvicorn
+requests==2.32.3
+    # via telepresence-demo-user-service (pyproject.toml)
 rich==13.9.4
     # via
     #   rich-toolkit
@@ -126,6 +132,8 @@ typing-extensions==4.12.2
     #   pydantic-core
     #   rich-toolkit
     #   typer
+urllib3==2.3.0
+    # via requests
 uvicorn[standard]==0.34.0
     # via
     #   fastapi
