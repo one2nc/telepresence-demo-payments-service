@@ -17,7 +17,7 @@ ORDER_SERVICE_URL = os.getenv("ORDER_SERVICE_URL", "http://orders-svc.api")
 
 @app.get("/healthz", status_code=201)
 async def health():
-    return {"message": "Hi Mom!"}
+    return {"message": "Hello from Payments Service!"}
 
 
 @app.post("/payments", response_model=Payment)
