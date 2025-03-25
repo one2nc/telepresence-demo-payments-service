@@ -9,7 +9,7 @@ from models import Payment
 
 app = FastAPI()
 
-# In-memory order store
+# In-memory payment store
 payments: Dict[str, Payment] = {}
 
 ORDER_SERVICE_URL = os.getenv("ORDER_SERVICE_URL", "http://orders-svc.api")
